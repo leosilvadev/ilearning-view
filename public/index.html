@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>GChat - Welcome</title>
+		<!-- build:css css/index.min.css -->
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<!-- endbuild -->
+	</head>
+	<body>
+		<header class="container">
+			<nav class="navbar navbar-inverse navbar-fixed-top navbar-embossed">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<a class="navbar-brand" href="#">GroovyChat</a>
+				</div>
+				
+				<div id="main-navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li>
+							<a id="btn-register-modal" href="register">
+								<span class="glyphicon glyper-empty"></span>
+								<span> Register Now</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<a id="btn-login" href="login" class="btn btn-primary">
+							<span class="glyphicon glyphicon-log-in"></span>
+							<span> Login</span>
+						</a>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<section id="global-notifications"></section>
+		
+		<script type="text/javascript" src="assets/libs/requirejs/require.js" data-main="assets/js/index-main.js"></script>
+	</body>
+</html>
