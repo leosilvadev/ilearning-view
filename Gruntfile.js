@@ -62,13 +62,13 @@ module.exports = function(grunt) {
 		browserSync : {
 			public : {
 				bsFiles : {
-					src : [ 'public/**/*' ]
+					src : [ 'dist/**/*' ]
 				}
 			},
 			options : {
 				watchTask : true,
 				server : {
-					baseDir : 'public'
+					baseDir : 'dist'
 				}
 			}
 		},
@@ -78,10 +78,10 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('dist', 		[ 'clean', 'copy' ]);
-	grunt.registerTask('min', 		[ 'useminPrepare', 'concat', 'cssmin', 'rev:imgs', 'rev:mins', 'usemin', 'imagemin' ]);
+	grunt.registerTask('dist', 	[ 'clean', 'copy' ]);
+	grunt.registerTask('min', 	[ 'useminPrepare', 'concat', 'cssmin', 'rev:imgs', 'rev:mins', 'usemin', 'imagemin' ]);
 	grunt.registerTask('default', 	[ 'dist', 'min' ]);
-	grunt.registerTask('server', 	[ 'browserSync', 'watch' ]);
+	grunt.registerTask('server', 	[ 'default', 'browserSync', 'watch' ]);
 
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');

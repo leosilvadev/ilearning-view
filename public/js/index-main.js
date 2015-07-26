@@ -1,12 +1,13 @@
 require.config({
 	paths: {
-		"jquery"		: "../libs/jquery/dist/jquery",
+		"jquery"			: "../libs/jquery/dist/jquery",
 		"underscore"	: "../libs/underscore-amd/underscore",
-		"backbone"		: "../libs/backbone-amd/backbone",
+		"backbone"		: "../libs/backbone/backbone",
 		"bootstrap"		: "../libs/bootstrap/dist/js/bootstrap",
-		"sockjs"		: "../libs/sockjs/sockjs.min",
+		"sockjs"			: "../libs/sockjs/sockjs.min",
 		"stomp"			: "../libs/stomp-websocket/lib/stomp.min",
-		"navigator"		: "utils/navigator"
+		"navigator"		: "utils/navigator",
+		"fblogin"		: "../libs/jquery/jquery.fblogin.min.js"
 	},
 
     shim: {
